@@ -1,0 +1,228 @@
+% 
+% Compile with ./build.sh
+% 
+
+\documentclass{beamer}
+
+\usetheme{Madrid}    
+
+\usepackage{listings}                                   
+\usepackage{hyperref}
+\usepackage{graphicx}                                 
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{beramono}
+\usepackage{minted}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\usepackage{dirtytalk}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark,fit}
+
+%\usepackage{enumitem}
+\pgfplotsset{compat=1.6} 
+
+\newcommand\Small{\fontsize{5}{5.2}\selectfont}
+\newcommand*\LSTfont{\Small\ttfamily\SetTracking{encoding=*}{-60}\lsstyle}
+\renewcommand{\footnotesize}{\tiny}
+
+\hypersetup{colorlinks=color, linkcolor=black}
+\definecolor{OliveGreen}{rgb}{0,0.6,0}
+\graphicspath{{./images/}}
+% 
+% Turn off beamer nav stuff...
+% 
+\setbeamertemplate{navigation symbols}{}
+
+
+%\input{lst-config/clojure-config}
+\begin{document}
+
+\begin{frame}
+  \frametitle{Invest In Learning Immutable Tech}
+  \center{
+    %
+    % Graphic for Title Page
+    %
+    \includegraphics[scale=.15]{tech2}
+    
+  }
+\end{frame}
+
+\frame{
+  \frametitle{Change is Inevitable}
+  \say{To improve is to change; to be perfect is to change often.}
+
+  \rightline{{\rm  -- Winston Churchill}}
+}
+
+\frame{
+  \frametitle{Change is Inevitable?}
+  \say{The more things change, the more they stay the same.}
+
+  \rightline{{\rm  -- Jean-Baptiste Alphonse Karr}}
+}
+
+
+\frame{
+  \frametitle{Title Page 2}
+  % \begin{columns}
+  %   \begin{column}{.49\textwidth}
+  %     \includegraphics[scale=.50]{church}
+  %   \end{column}
+  %   \begin{column}{.49\textwidth}
+  %     \itemize{
+  %     \item Alonzo Church - 1936
+  %     \item $\lambda$ Calculus
+  %      \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
+  %        {An Unsolvable Problem of Elementary Number Theory}}
+  %     }
+
+  %   \end{column}
+  %\end{columns}
+}
+
+%\resetcounter[footnote]
+%\setcounter{footnote}{0} 
+
+
+%
+% For databases, mention stack-overflow and wikipedia as examples where 
+% relational can be web scale
+%
+\frame{
+  \frametitle{Database}
+  \begin{columns}
+    \begin{column}{.49\textwidth}
+      \includegraphics[scale=.60]{db}
+    \end{column}
+    \begin{column}{.49\textwidth}
+      \itemize{
+      \item Postgres
+      \item SQL Server
+      \item Oracle
+      \item SQLite
+      \item Couchbase
+      \item Cassandra
+      \item DynamoDB
+      \item Bigtable
+      \item Snowflake
+      \item DB2
+      \item H2
+      %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
+      %    {An Unsolvable Problem of Elementary Number Theory}}
+      }
+
+    \end{column}
+  \end{columns}
+  % \center{
+  %   \includegraphics[scale=.75]{db}
+    
+  }
+
+  \frame{
+    \frametitle{Operating Systems}
+    \begin{columns}
+      \begin{column}{.49\textwidth}
+        \includegraphics[scale=.13]{operating-systems}
+      \end{column}
+      \begin{column}{.49\textwidth}
+        \itemize{
+        \item Trouble Shooting
+        \item Debugging
+        \item Performance Tuning
+        \item Productivity
+        %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
+        %    {An Unsolvable Problem of Elementary Number Theory}}
+        }
+  
+      \end{column}
+    \end{columns}
+    % \center{
+    %   \includegraphics[scale=.75]{db}
+      
+    }
+
+
+% \frame{
+%   \frametitle{Title - Page of Items}
+%   \begin{itemize}
+%   \item Item 1
+%   % To not show following item until keypress
+%   % \pause
+%   \item Item 2
+%   \item Item 3
+%   \end{itemize}
+% }
+
+% Example of inlining code with minted
+% \begin{frame}[fragile]
+%   \frametitle{Functions}
+%   Typical function definition:
+%   \begin{minted}[fontsize=\normalsize,escapeinside=||]{clojure}
+%     (defn foo 
+%       "optional multiline doc comment"
+%       {:optional :metadata-map} 
+%       [arg1 arg2]
+%       {:optional :pre/post-conditions-map}
+%       (...implementation...))
+%   \end{minted}
+
+%   \vspace{1 cm}
+
+% %% [autogobble,fontfamily=myfont,escapeinside=||}{c}
+
+%   This is an anonymous function (sum of its args):
+%   \begin{minted}[fontsize=\normalsize]{clojure}
+%     (fn [a b] (+ a b))   
+%   \end{minted}
+%   \vspace{1 cm}
+
+%   An abbreviated equivalent:
+%   \begin{minted}[fontsize=\normalsize]{clojure}
+%     #(+ %1 %2)
+%   \end{minted}
+% \end{frame}
+
+
+  \frame{
+    \frametitle{Networking}
+    \begin{columns}
+      \begin{column}{.49\textwidth}
+        \includegraphics[scale=.13]{operating-systems}
+      \end{column}
+      \begin{column}{.49\textwidth}
+        \itemize{
+        \item TCP
+        \item UDP
+        \item HTTP
+        \item SFTP
+        \item SSL
+        \item DHCP
+        \item DNS
+        %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
+        %    {An Unsolvable Problem of Elementary Number Theory}}
+        }
+  
+      \end{column}
+    \end{columns}
+    % \center{
+    %   \includegraphics[scale=.75]{db}
+      
+    }
+
+
+
+%https://clojure.org/api/cheatsheet
+\frame{
+  \frametitle{Resources}
+  \begin{itemize}
+
+   \item \href {https://www.example.com/}{\color {blue}{Link to useful info}}
+
+    %% put back ref to source code-[]
+  \end{itemize}
+}
+
+\end{document}
