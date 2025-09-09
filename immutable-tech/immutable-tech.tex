@@ -68,23 +68,27 @@
   \rightline{{\rm  --- Jean-Baptiste Alphonse Karr}}
 }
 
-
 \frame{
   \frametitle{Once Popular Tech}
-  % \begin{columns}
-  %   \begin{column}{.49\textwidth}
-  %     \includegraphics[scale=.50]{church}
-  %   \end{column}
-  %   \begin{column}{.49\textwidth}
-  %     \itemize{
-  %     \item Alonzo Church - 1936
-  %     \item $\lambda$ Calculus
-  %      \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
-  %        {An Unsolvable Problem of Elementary Number Theory}}
-  %     }
-
-  %   \end{column}
-  %\end{columns}
+   \begin{columns}
+    \begin{column}{.49\textwidth}
+      \includegraphics[scale=.50]{ibm-pc}
+    \end{column}
+    \begin{column}{.49\textwidth}
+      \itemize{
+      \item CORBA	
+      \item COM
+      \item DCOM
+      \item Adobe Flash
+      \item J2EE (Websphere/Weblogic)
+      \item Backbone
+      \item Ember
+      \item Knockout
+      \item JQuery
+      \item SOAP
+      }
+    \end{column}
+  \end{columns}
 }
 
 %\resetcounter[footnote]
@@ -116,6 +120,7 @@
       \item Snowflake
       \item DB2
       \item H2
+      \item MySQL
       %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
       %    {An Unsolvable Problem of Elementary Number Theory}}
       }
@@ -165,6 +170,7 @@
       \item Device Drivers
       \item Kernel vs User Space
       \item Sockets
+      \item Pipes
       \item File Systems
       %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
       %    {An Unsolvable Problem of Elementary Number Theory}}
@@ -188,55 +194,27 @@
 %   \end{itemize}
 % }
 
-% Example of inlining code with minted
-% \begin{frame}[fragile]
-%   \frametitle{Functions}
-%   Typical function definition:
-%   \begin{minted}[fontsize=\normalsize,escapeinside=||]{clojure}
-%     (defn foo 
-%       "optional multiline doc comment"
-%       {:optional :metadata-map} 
-%       [arg1 arg2]
-%       {:optional :pre/post-conditions-map}
-%       (...implementation...))
-%   \end{minted}
 
-%   \vspace{1 cm}
-
-% %% [autogobble,fontfamily=myfont,escapeinside=||}{c}
-
-%   This is an anonymous function (sum of its args):
-%   \begin{minted}[fontsize=\normalsize]{clojure}
-%     (fn [a b] (+ a b))   
-%   \end{minted}
-%   \vspace{1 cm}
-
-%   An abbreviated equivalent:
-%   \begin{minted}[fontsize=\normalsize]{clojure}
-%     #(+ %1 %2)
-%   \end{minted}
-% \end{frame}
 
 
   \frame{
     \frametitle{Networking}
     \begin{columns}
       \begin{column}{.49\textwidth}
-        \includegraphics[scale=.13]{operating-systems}
+        \includegraphics[width=0.90\textwidth]{networking}
       \end{column}
       \begin{column}{.49\textwidth}
         \itemize{
-        \item TCP
-        \item UDP
-        \item HTTP
-        \item SFTP
-        \item SSL
-        \item DHCP
-        \item DNS
-        %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
-        %    {An Unsolvable Problem of Elementary Number Theory}}
+        \item TCP Transmission Control Protocol
+        \item UDP User Datagram Protocol
+        \item HTTP Hypertext Transfer Protocol
+        \item SFTP Secure File Transfer Protocol
+        \item SSL Secure Socket Layer
+        \item DHCP Dynamic Host Configuration Protocol 
+        \item DNS Domain Name System
+        % {\href{https://www.rfc-editor.org/rfc-index.html}
+        % {RFC Index}}
         }
-  
       \end{column}
     \end{columns}
     % \center{
@@ -244,6 +222,7 @@
       
     }
 
+    %% TODO - add JVM and ASM Slides
 
 
 %https://clojure.org/api/cheatsheet
@@ -251,10 +230,13 @@
   \frametitle{Resources}
   \begin{itemize}
 
+  \item \href {https://www.rfc-editor.org/rfc-index.html}{\color {blue}{RFC Index}}
   \item \href {https://developer.arm.com/documentation/107829/0200/Assembly-language-basics}{\color {blue}{ARM Assembly Language}}
+  \item \href {https://www.youtube.com/watch?v=OT1RErkfLNQ}{\color {blue}{SQL - Beginner to Advanced in 4 hours}}
+  \item \href {https://www.clojure.org}{\color {blue}{Clojure}}
   \item \href {https://github.com/tstout/presentations/blob/main/immutable-tech/immutable-tech.tex}{\color {blue}{Source Code For This Document}}
 
-    %% put back ref to source code-[]
+    %% put a ref to this https://github.com/chubin/cheat.sh
   \end{itemize}
 }
 
