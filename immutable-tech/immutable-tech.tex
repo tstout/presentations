@@ -96,8 +96,7 @@
 
 
 %
-% For databases, mention stack-overflow and wikipedia as examples where 
-% relational can be web scale
+% For databases, 
 %
 \frame{
   \frametitle{Database}
@@ -121,15 +120,15 @@
       \item DB2
       \item H2
       \item MySQL
-      %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
-      %    {An Unsolvable Problem of Elementary Number Theory}}
       }
 
     \end{column}
   \end{columns}
-  % \center{
-  %   \includegraphics[scale=.75]{db}
-    
+  % Be sure to comment here on:
+  % - stack-overflow (SQL Server) and wikipedia (mariaDB) as examples where relational 
+  %   can be web scale
+  % - utillity of H2 beyond tests
+  % - Postgres wire protocol becoming a defacto integration protocol for data
   }
 
 \frame{
@@ -222,8 +221,68 @@
       
     }
 
-    %% TODO - add JVM and ASM Slides
+\frame{
+    \frametitle{CLI Tools}
+    \begin{columns}
+      \begin{column}{.49\textwidth}
+        \includegraphics[width=0.90\textwidth]{bash}
+      \end{column}
+      \begin{column}{.49\textwidth}
+        \itemize{
+        \item sh/bash
+        \item awk
+        \item sed
+        \item find
+        \item grep
+        \item netstat
+        \item screen
+        \item nohup
+        \item od
+        \item strings
+        }
+      \end{column}
+    \end{columns}  
+    }
 
+    \frame{
+    \frametitle{JVM Internals}
+    \begin{columns}
+      \begin{column}{1\textwidth}
+        \includegraphics[width=0.90\textwidth]{jvm-internals}
+      \end{column}
+    \end{columns}
+    }
+
+    \frame{
+    \frametitle{JVM - Not Limted to Java the Language}
+    \begin{columns}
+      \begin{column}{.49\textwidth}
+        \includegraphics[width=0.90\textwidth]{jvm}
+      \end{column}
+      \begin{column}{.49\textwidth}
+        \itemize{
+        \pause
+        \item Clojure
+        \pause
+        \item Kotlin
+        \pause
+        \item Scala
+        \pause
+        \item Groovy
+        \pause
+        \item JRuby
+        \pause
+        \item Nashorn
+        \pause 
+        \item Jython
+        }
+      \end{column}
+    \end{columns}    
+    }
+    % Mention these topics:
+    % JRuby project is good source of info what changes/additions to JRE
+
+    %% TODO - ASM Slides
 
 %https://clojure.org/api/cheatsheet
 \frame{
@@ -233,9 +292,11 @@
   \item \href {https://www.rfc-editor.org/rfc-index.html}{\color {blue}{RFC Index}}
   \item \href {https://developer.arm.com/documentation/107829/0200/Assembly-language-basics}{\color {blue}{ARM Assembly Language}}
   \item \href {https://www.youtube.com/watch?v=OT1RErkfLNQ}{\color {blue}{SQL - Beginner to Advanced in 4 hours}}
+  %\item \href {https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf}{\color {blue}{Operating System Concepts}}
+  \item \href {https://www.geeksforgeeks.org/operating-systems/operating-systems}{\color {blue}{Operating System Tutorial}}
   \item \href {https://www.clojure.org}{\color {blue}{Clojure}}
+  \item \href {https://datastation.multiprocess.io/blog/2022-02-08-the-world-of-postgresql-wire-compatibility.html}{\color {blue}{Postgres Wire Protocol}}
   \item \href {https://github.com/tstout/presentations/blob/main/immutable-tech/immutable-tech.tex}{\color {blue}{Source Code For This Document}}
-
     %% put a ref to this https://github.com/chubin/cheat.sh
   \end{itemize}
 }
