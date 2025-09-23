@@ -36,6 +36,12 @@
 % Turn off beamer nav stuff...
 % 
 \setbeamertemplate{navigation symbols}{}
+\setbeamerfont{note page}{size=\tiny}
+
+% 
+% build with this option to only generate the notes
+%
+%\setbeameroption{show only notes}
 
 
 %\input{lst-config/clojure-config}
@@ -49,6 +55,11 @@
     %
     \includegraphics[scale=.15]{tech2}
     
+  }
+  \note{Developers are required to constantly learn new frameworks, platforms, 
+  APIs, etc. However, so much of this is transient, eventually discarded outright or 
+  replaced with something similar but new and shiny. There are many core tech components that 
+  are virtually unchanging. Knowledge of these will be of value no matter your career path.
   }
 \end{frame}
 
@@ -80,7 +91,7 @@
       \item COM
       \item DCOM
       \item Adobe Flash
-      \item J2EE (Websphere/Weblogic)
+      \item JEE (Websphere/Weblogic)
       \item Backbone
       \item Ember
       \item Knockout
@@ -89,6 +100,15 @@
       }
     \end{column}
   \end{columns}
+  \note{
+    \begin{itemize}
+      \item Common Object Request Broker Architecture
+      \item COM/DCOM - Fear of Microsoft at the time
+      \item Flash - necessary in early days of web
+      \item SOAP - Began as XML RPC - IBM and MS made it increasingly complex
+      \item JEE - App Container ecosystem - multiple vendors implementing standards and competing
+    \end{itemize}
+  }
 }
 
 %\resetcounter[footnote]
@@ -124,12 +144,25 @@
 
     \end{column}
   \end{columns}
-  % Be sure to comment here on:
-  % - stack-overflow (SQL Server) and wikipedia (mariaDB) as examples where relational 
-  %   can be web scale
-  % - utillity of H2 beyond tests
-  % - Postgres wire protocol becoming a defacto integration protocol for data
+  \note{
+    \begin{itemize}
+      \item Data is very important - most enterprise software is focused on data processing
+      \item Application stacks come and go, but data can live forever. In some cases, the older the data
+            the more valuable it is.
+      \item The native language of databases is some form of SQL.
+      \item Postgres wire protocol is becoming a defacto integration protocol for data
+      \item NOSQL - better name is Not Relational or No Joins
+      \item stack-overflow (SQL Server) and wikipedia (mariaDB) as examples where 
+      relational can be web scale
+      \item utillity of H2 beyond tests - server mode, limited cluster ability, 
+      great for slurping CSV data for SQL hacking
+      \item H2 supports postgres wire protocol, facilitating using H2 with languages other
+      than java
+      \item H2 great for small apps - I use it for storing logs on apps that run on raspbery pi.
+            Using a DB client + SQL is very useful for looking at your logs.
+    \end{itemize}
   }
+}
 
 \frame{
   \frametitle{Operating Systems}
@@ -262,8 +295,6 @@
       \begin{column}{.49\textwidth}
         \itemize{
         \pause
-        \item Clojure
-        \pause
         \item Kotlin
         \pause
         \item Scala
@@ -272,9 +303,7 @@
         \pause
         \item JRuby
         \pause
-        \item Nashorn
-        \pause 
-        \item Jython
+        \item Clojure
         }
       \end{column}
     \end{columns}    
@@ -290,11 +319,11 @@
   \begin{itemize}
 
   \item \href {https://www.rfc-editor.org/rfc-index.html}{\color {blue}{RFC Index}}
-  \item \href {https://developer.arm.com/documentation/107829/0200/Assembly-language-basics}{\color {blue}{ARM Assembly Language}}
+  %\item \href {https://developer.arm.com/documentation/107829/0200/Assembly-language-basics}{\color {blue}{ARM Assembly Language}}
   \item \href {https://www.youtube.com/watch?v=OT1RErkfLNQ}{\color {blue}{SQL - Beginner to Advanced in 4 hours}}
   %\item \href {https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf}{\color {blue}{Operating System Concepts}}
   \item \href {https://www.geeksforgeeks.org/operating-systems/operating-systems}{\color {blue}{Operating System Tutorial}}
-  \item \href {https://www.clojure.org}{\color {blue}{Clojure}}
+  %\item \href {https://www.clojure.org}{\color {blue}{Clojure}}
   \item \href {https://datastation.multiprocess.io/blog/2022-02-08-the-world-of-postgresql-wire-compatibility.html}{\color {blue}{Postgres Wire Protocol}}
   \item \href {https://github.com/tstout/presentations/blob/main/immutable-tech/immutable-tech.tex}{\color {blue}{Source Code For This Document}}
     %% put a ref to this https://github.com/chubin/cheat.sh
