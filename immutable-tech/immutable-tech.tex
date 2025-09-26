@@ -41,7 +41,7 @@
 % 
 % build with this option to only generate the notes
 %
-%\setbeameroption{show only notes}
+\setbeameroption{show only notes}
 
 
 %\input{lst-config/clojure-config}
@@ -56,11 +56,7 @@
     \includegraphics[scale=.15]{tech2}
     
   }
-  \note{Developers are required to constantly learn new frameworks, platforms, 
-  APIs, etc. However, so much of this is transient, eventually discarded outright or 
-  replaced with something similar but new and shiny. There are many core tech components that 
-  are virtually unchanging. Knowledge of these will be of value no matter your career path.
-  }
+  \note{ Placeholder }
 \end{frame}
 
 \frame{
@@ -69,6 +65,7 @@
   \say{To improve is to change; to be perfect is to change often.}
   \large
   \rightline{{\rm  --- Winston Churchill}}
+  \note{ Placeholder }
 }
 
 \frame{
@@ -77,6 +74,12 @@
   \say{The more things change, the more they stay the same.}
   \large
   \rightline{{\rm  --- Jean-Baptiste Alphonse Karr}}
+  \note{
+    Developers are required to constantly learn new frameworks, platforms, 
+    APIs, etc. However, so much of this is transient, eventually discarded outright or 
+    replaced with something similar but new and shiny. There are many core tech components that 
+    are virtually unchanging. Knowledge of these will be of value no matter your career path.
+  }
 }
 
 \frame{
@@ -146,7 +149,7 @@
   \end{columns}
   \note{
     \begin{itemize}
-      \item Data is very important - most enterprise software is focused on data processing
+      \item Processing data is the essence of computing
       \item Application stacks come and go, but data can live forever. In some cases, the older the data
             the more valuable it is.
       \item The native language of databases is some form of SQL.
@@ -184,7 +187,7 @@
   \end{columns}
   % \center{
   %   \includegraphics[scale=.75]{db}
-    
+  \note{ TODO }
   }
 
   \frame{
@@ -212,7 +215,7 @@
   \end{columns}
   % \center{
   %   \includegraphics[scale=.75]{db}
-    
+  \note{ TODO }  
   }
 
 % \frame{
@@ -251,9 +254,16 @@
     \end{columns}
     % \center{
     %   \includegraphics[scale=.75]{db}
-      
-    }
-
+    \note { 
+      \begin {itemize} 
+      \item The protocols here define the foundation for how humanity 
+           and machines communicate electronically
+      \item No matter what type of software dev you are engaged in, details of these protocols
+            will arise frequently in many contexts, including trouble shooting.
+      \end {itemize}
+    }  
+  }
+ 
 \frame{
     \frametitle{CLI Tools}
     \begin{columns}
@@ -275,6 +285,15 @@
         }
       \end{column}
     \end{columns}  
+    \note{
+      \begin{itemize}
+        \item sh/bash - Yes, there are other more popular shells, but sh/bash is almost always 
+              available in all unix environments
+        \item Even if you don't like unix shell scripting, there will always be production support
+              issues arise where you need to do something quickly. Knowing sh scripting to an 
+              intermediate level will server you well
+      \end{itemize}
+     }
     }
 
     \frame{
@@ -284,6 +303,7 @@
         \includegraphics[width=0.90\textwidth]{jvm-internals}
       \end{column}
     \end{columns}
+    \note{ TODO }
     }
 
     \frame{
@@ -294,22 +314,30 @@
       \end{column}
       \begin{column}{.49\textwidth}
         \itemize{
-        \pause
+        %\pause
         \item Kotlin
-        \pause
+        %\pause
         \item Scala
-        \pause
+        %\pause
         \item Groovy
-        \pause
+        %\pause
         \item JRuby
-        \pause
+        %\pause
         \item Clojure
         }
       \end{column}
-    \end{columns}    
-    }
+    \end{columns} 
+    \note{
+      \begin{itemize}
+        \item Kotlin - a better java
+        \item Groovy - adds more dynamic behavior to java
+        \item JRuby is a good source of info regarding details of what is happening in the JVM internals
+        \item Clojure - functional lisp, excellent java interop - greatest hits of comp sci from last 50 years
+      \end{itemize}
+     }
+   }
     % Mention these topics:
-    % JRuby project is good source of info what changes/additions to JRE
+    % 
 
     %% TODO - ASM Slides
 
@@ -328,6 +356,7 @@
   \item \href {https://github.com/tstout/presentations/blob/main/immutable-tech/immutable-tech.tex}{\color {blue}{Source Code For This Document}}
     %% put a ref to this https://github.com/chubin/cheat.sh
   \end{itemize}
+  \note{ TODO }
 }
 
 \end{document}
