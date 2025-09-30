@@ -107,6 +107,8 @@
     \begin{itemize}
       \item Common Object Request Broker Architecture
       \item COM/DCOM - Fear of Microsoft at the time
+      \item CORBA’s ultimate goal was to be a universal middleware standard for distributed, object-oriented computing—much like what web services, REST APIs, and gRPC 
+            do today, but designed in an earlier era of computing.
       \item Flash - necessary in early days of web
       \item SOAP - Began as XML RPC - IBM and MS made it increasingly complex
       \item JEE - App Container ecosystem - multiple vendors implementing standards and competing
@@ -213,7 +215,17 @@
 
     \end{column}
   \end{columns}
-  \note{ TODO }  
+  \note{ 
+    \begin{itemize}
+      \item These are the core concepts that underly most operating systems
+      \item Even if you are not doing systems programming, these concepts will come up frequently
+            in many contexts, including trouble shooting.
+      \item Even if you stay in higher-level application development, 
+            having “systems intuition” sets you apart
+      \item It makes you better at reading tools like top, htop, strace, 
+            vmstat, or Windows Performance Monitor
+    \end{itemize}  
+   } 
   }
 
 % \frame{
@@ -238,6 +250,7 @@
       \end{column}
       \begin{column}{.49\textwidth}
         \itemize{
+          \begin{small}
         \item TCP Transmission Control Protocol
         \item UDP User Datagram Protocol
         \item HTTP Hypertext Transfer Protocol
@@ -245,8 +258,12 @@
         \item SSL Secure Socket Layer
         \item DHCP Dynamic Host Configuration Protocol 
         \item DNS Domain Name System
+        \item SMTP Simple Mail Transfer Protocol
+        \item IMAP Internet Message Access Protocol
+        \item POP3 Post Office Protocol 3
         % {\href{https://www.rfc-editor.org/rfc-index.html}
         % {RFC Index}}
+          \end{small}
         }
       \end{column}
     \end{columns}
