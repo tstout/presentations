@@ -41,7 +41,7 @@
 % 
 % build with this option to only generate the notes
 %
-\setbeameroption{show only notes}
+%\setbeameroption{show only notes}
 
 
 %\input{lst-config/clojure-config}
@@ -213,8 +213,6 @@
 
     \end{column}
   \end{columns}
-  % \center{
-  %   \includegraphics[scale=.75]{db}
   \note{ TODO }  
   }
 
@@ -291,7 +289,8 @@
               available in all unix environments
         \item Even if you don't like unix shell scripting, there will always be production support
               issues arise where you need to do something quickly. Knowing sh scripting to an 
-              intermediate level will server you well
+              intermediate level will serve you well
+        \item WSL - Windows Subsytem for Linux - bash on windows
       \end{itemize}
      }
     }
@@ -303,7 +302,14 @@
         \includegraphics[width=0.90\textwidth]{jvm-internals}
       \end{column}
     \end{columns}
-    \note{ TODO }
+    \note{
+      \begin{itemize}
+        \item jps
+        \item jstack
+        \item jmap
+        \item jcmd
+      \end{itemize} 
+      }
     }
 
     \frame{
@@ -331,17 +337,13 @@
       \begin{itemize}
         \item Kotlin - a better java
         \item Groovy - adds more dynamic behavior to java
-        \item JRuby is a good source of info regarding details of what is happening in the JVM internals
+        \item JRuby - is a good source of info regarding details of what is happening in the JVM internals
         \item Clojure - functional lisp, excellent java interop - greatest hits of comp sci from last 50 years
       \end{itemize}
      }
    }
-    % Mention these topics:
-    % 
+  
 
-    %% TODO - ASM Slides
-
-%https://clojure.org/api/cheatsheet
 \frame{
   \frametitle{Resources}
   \begin{itemize}
@@ -353,10 +355,16 @@
   \item \href {https://www.geeksforgeeks.org/operating-systems/operating-systems}{\color {blue}{Operating System Tutorial}}
   %\item \href {https://www.clojure.org}{\color {blue}{Clojure}}
   \item \href {https://datastation.multiprocess.io/blog/2022-02-08-the-world-of-postgresql-wire-compatibility.html}{\color {blue}{Postgres Wire Protocol}}
+  \item \href {https://www.clojure.org}{\color {blue}{Clojure}}
+  \item \href {https://www.jruby.org}{\color {blue}{JRuby}}
+  \item \href {https://kotlinlang.org/spec/introduction.html}{\color {blue}{Kotlin}}
+  \item \href {https://www.youtube.com/watch?v=zWVV31NYi1U}{\color {blue}{Bash Tutorial}}
+  \item \href {https://learn.microsoft.com/en-us/windows/wsl/about}{\color {blue}{WSL - Windows Subsystem for Linux}}
+  \item \href {https://clojure.org/api/cheatsheet}{\color {blue}{Cheatsheet Tool}}
+  
   \item \href {https://github.com/tstout/presentations/blob/main/immutable-tech/immutable-tech.tex}{\color {blue}{Source Code For This Document}}
-    %% put a ref to this https://github.com/chubin/cheat.sh
   \end{itemize}
-  \note{ TODO }
+  \note{ Placeholder }
 }
 
 \end{document}
