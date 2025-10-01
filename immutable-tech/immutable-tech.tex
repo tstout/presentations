@@ -90,23 +90,23 @@
     \end{column}
     \begin{column}{.49\textwidth}
       \itemize{
-      \item CORBA	
-      \item COM
-      \item DCOM
-      \item Adobe Flash
-      \item JEE (Websphere/Weblogic)
-      \item Backbone
-      \item Ember
-      \item Knockout
-      \item JQuery
-      \item SOAP
+        \item Adobe Flash
+        \item Backbone
+        \item COM
+        \item CORBA
+        \item DCOM
+        \item Ember
+        \item JEE (Websphere/Weblogic)
+        \item JQuery
+        \item Knockout
+        \item SOAP
       }
     \end{column}
   \end{columns}
   \note{
     \begin{itemize}
       \item Common Object Request Broker Architecture
-      \item COM/DCOM - Fear of Microsoft at the time
+      \item COM/DCOM - Fear of Microsoft dominating the market at the time
       \item CORBA’s ultimate goal was to be a universal middleware standard for distributed, object-oriented computing—much like what web services, REST APIs, and gRPC 
             do today, but designed in an earlier era of computing.
       \item Flash - necessary in early days of web
@@ -154,11 +154,11 @@
       \item Processing data is the essence of computing
       \item Application stacks come and go, but data can live forever. In some cases, the older the data
             the more valuable it is.
-      \item The native language of databases is some form of SQL.
-      \item Postgres wire protocol is becoming a defacto integration protocol for data
+      \item The native language of most databases is some form of SQL.
       \item NOSQL - better name is Not Relational or No Joins
       \item stack-overflow (SQL Server) and wikipedia (mariaDB) as examples where 
       relational can be web scale
+      \item Postgres wire protocol is becoming a defacto integration protocol for data
       \item utillity of H2 beyond tests - server mode, limited cluster ability, 
       great for slurping CSV data for SQL hacking
       \item H2 supports postgres wire protocol, facilitating using H2 with languages other
@@ -209,8 +209,6 @@
       \item Sockets
       \item Pipes
       \item File Systems
-      %  \footnote{\href{https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/church.pdf}
-      %    {An Unsolvable Problem of Elementary Number Theory}}
       }
 
     \end{column}
@@ -251,16 +249,16 @@
       \begin{column}{.49\textwidth}
         \itemize{
           \begin{small}
-        \item TCP Transmission Control Protocol
-        \item UDP User Datagram Protocol
-        \item HTTP Hypertext Transfer Protocol
-        \item SFTP Secure File Transfer Protocol
-        \item SSL Secure Socket Layer
-        \item DHCP Dynamic Host Configuration Protocol 
-        \item DNS Domain Name System
-        \item SMTP Simple Mail Transfer Protocol
-        \item IMAP Internet Message Access Protocol
-        \item POP3 Post Office Protocol 3
+            \item TCP Transmission Control Protocol
+            \item UDP User Datagram Protocol
+            \item HTTP Hypertext Transfer Protocol
+            \item SFTP Secure File Transfer Protocol
+            \item SSL Secure Socket Layer
+            \item DHCP Dynamic Host Configuration Protocol 
+            \item DNS Domain Name System
+            \item SMTP Simple Mail Transfer Protocol
+            \item IMAP Internet Message Access Protocol
+            \item POP3 Post Office Protocol 3
         % {\href{https://www.rfc-editor.org/rfc-index.html}
         % {RFC Index}}
           \end{small}
@@ -271,10 +269,17 @@
     %   \includegraphics[scale=.75]{db}
     \note { 
       \begin {itemize} 
-      \item The protocols here define the foundation for how humanity 
-           and machines communicate electronically
+      \item The protocols here define the foundation for how humanity (and machines)
+           communicate digitally
+      \item These protocols are stable and have been in use for decades
+      \item TCP - 1974 RFC 675 
+      \item UDP - 1980 RCF 768
+      \item SMTP - 1982 RFC 821
+      \item DNS - 1983 RFC 882,883
+      \item HTTP - 1991 RFC 1945
+      \item SSL - 1995 RFC 6101
       \item No matter what type of software dev you are engaged in, details of these protocols
-            will arise frequently in many contexts, including trouble shooting.
+            will arise frequently in many contexts, especially troubleshooting.
       \end {itemize}
     }  
   }
@@ -297,6 +302,7 @@
         \item nohup
         \item od
         \item strings
+        \item objdump
         }
       \end{column}
     \end{columns}  
