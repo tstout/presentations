@@ -20,6 +20,7 @@
 \usepackage{pgfplots}
 \usepackage{dirtytalk}
 \usepackage{tikz}
+\usepackage{csquotes}
 \usetikzlibrary{tikzmark,fit}
 
 %\usepackage{enumitem}
@@ -41,7 +42,7 @@
 % 
 % build with this option to only generate the notes
 %
-%\setbeameroption{show only notes}
+\setbeameroption{show only notes}
 
 
 %\input{lst-config/clojure-config}
@@ -219,7 +220,7 @@
       \item Even if you are not doing systems programming, these concepts will come up frequently
             in many contexts, including trouble shooting.
       \item Even if you stay in higher-level application development, 
-            having “systems intuition” sets you apart
+            having \enquote{systems intuition} sets you apart
       \item It makes you better at reading tools like top, htop, strace, 
             vmstat, or Windows Performance Monitor
     \end{itemize}  
@@ -331,6 +332,7 @@
         \item jstack
         \item jmap
         \item jcmd
+        \item visulVM
       \end{itemize} 
       }
     }
